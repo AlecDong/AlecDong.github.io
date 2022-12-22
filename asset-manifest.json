@@ -1,16 +1,17 @@
 {
-  "main.css": "/static/css/main.7a17f3bf.chunk.css",
-  "main.js": "/static/js/main.88a02d8b.chunk.js",
-  "main.js.map": "/static/js/main.88a02d8b.chunk.js.map",
-  "static/js/1.95ea83b6.chunk.js": "/static/js/1.95ea83b6.chunk.js",
-  "static/js/1.95ea83b6.chunk.js.map": "/static/js/1.95ea83b6.chunk.js.map",
-  "static/js/2.fe9e49dc.chunk.js": "/static/js/2.fe9e49dc.chunk.js",
-  "static/js/2.fe9e49dc.chunk.js.map": "/static/js/2.fe9e49dc.chunk.js.map",
-  "runtime~main.js": "/static/js/runtime~main.f8403e30.js",
-  "runtime~main.js.map": "/static/js/runtime~main.f8403e30.js.map",
-  "static/media/logo.svg": "/static/media/logo.06e73328.svg",
-  "static/css/main.7a17f3bf.chunk.css.map": "/static/css/main.7a17f3bf.chunk.css.map",
-  "index.html": "/index.html",
-  "precache-manifest.8030a056a975c9fb854c109e051ba4e0.js": "/precache-manifest.8030a056a975c9fb854c109e051ba4e0.js",
-  "service-worker.js": "/service-worker.js"
+  "files": {
+    "main.css": "/static/css/main.4944db52.css",
+    "main.js": "/static/js/main.54596a14.js",
+    "static/media/react-bootstrap-carousel.eot": "/static/media/react-bootstrap-carousel.1a0fe919ea31a13740d3.eot",
+    "static/media/react-bootstrap-carousel.ttf": "/static/media/react-bootstrap-carousel.f41331129badd2b01fc7.ttf",
+    "static/media/react-bootstrap-carousel.woff": "/static/media/react-bootstrap-carousel.96e0693824065d5b7d56.woff",
+    "static/media/react-bootstrap-carousel.svg": "/static/media/react-bootstrap-carousel.190d0d1bf1c865be7a1b.svg",
+    "index.html": "/index.html",
+    "main.4944db52.css.map": "/static/css/main.4944db52.css.map",
+    "main.54596a14.js.map": "/static/js/main.54596a14.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.4944db52.css",
+    "static/js/main.54596a14.js"
+  ]
 }
