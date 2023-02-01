@@ -1,85 +1,218 @@
-  * {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
-  }
+* {
+  box-sizing: border-box;
+  margin: 0;
+  margin-bottom: 0;
+  padding: 0;
+}
 
-  .project {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 50vh;
-    background-color: #6456ff;
-  }
+.project {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 50vh;
+  padding-bottom: 10px;
+  padding-top: 10px;
+}
 
-  .project-info {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 90%;
-    width: 90%;
-    background-color: #aba3ff;
-    text-align: center;
-  }
+.project-info {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 90%;
+  width: 90%;
+  background-color: #fff;
+  text-align: center;
+}
 
-  .carousel-container {
-    align-items: center;
-    width: 90%;
-  }
+.carousel-container {
+  align-items: center;
+  width: 90%;
+}
 
-  .inactive {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 30px;
-    height: 5px;
-    padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: .5;
-    transition: opacity .6s ease;
-  }
+.react-multi-carousel-list {
+  width: 90%;
+  margin: 0 auto;
+}
 
-  .active {
-    box-sizing: content-box;
-    flex: 0 1 auto;
-    width: 30px;
-    height: 5px;
-    padding: 0;
-    margin-right: 3px;
-    margin-left: 3px;
-    text-indent: -999px;
-    cursor: pointer;
-    background-color: #fff;
-    background-clip: padding-box;
-    border: 0;
-    border-top: 10px solid transparent;
-    border-bottom: 10px solid transparent;
-    opacity: 1;
-    transition: opacity .6s ease;
-  }
+.inactive {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 5px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 0.5;
+  transition: opacity 0.6s ease;
+}
 
-  .react-multiple-carousel__arrow {
-    background-color: rgba(255, 255, 255, 0) !important;
-    width: 50px;
-    height: 50px;
-  }
+.active {
+  box-sizing: content-box;
+  flex: 0 1 auto;
+  width: 30px;
+  height: 5px;
+  padding: 0;
+  margin-right: 3px;
+  margin-left: 3px;
+  text-indent: -999px;
+  cursor: pointer;
+  background-color: #fff;
+  background-clip: padding-box;
+  border: 0;
+  border-top: 10px solid transparent;
+  border-bottom: 10px solid transparent;
+  opacity: 1;
+  transition: opacity 0.6s ease;
+}
 
-  .react-multiple-carousel__arrow:hover {
-    background-color: rgb(0, 0, 0) !important;
-    opacity: 0.5;
-  }
+.react-multiple-carousel__arrow {
+  background-color: rgba(255, 255, 255, 0) !important;
+  width: 50px;
+  height: 50px;
+}
 
-  p {
-    word-break: break-all;
-    white-space: normal;
-  }
-  
+.react-multiple-carousel__arrow::before {
+  color: rgb(0, 0, 0) !important;
+}
+
+.react-multiple-carousel__arrow:hover {
+  background-color: rgba(119, 119, 119, 0.5) !important;
+}
+
+#background {
+  background-color: #000;
+  height: 100vh;
+  width: 100vw;
+  position: fixed;
+  z-index: -1;
+  object-fit: cover;
+}
+
+#home {
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  align-items: center;
+  color: #fff;
+}
+
+#projects {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  z-index: -4;
+}
+
+#projects h1 {
+  color: #fff;
+}
+
+#skills {
+  background-color: rgba(0, 0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+#contact {
+  background-color: rgb(0, 0, 0);
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+form {
+  max-width: 420px;
+  margin: 0 auto;
+}
+
+.feedback-input {
+  color: white;
+  font-weight: 500;
+  font-size: 18px;
+  border-radius: 5px;
+  line-height: 22px;
+  background-color: transparent;
+  border: 2px solid #787878;
+  transition: all 0.3s;
+  padding: 13px;
+  margin-bottom: 15px;
+  width: 100%;
+  box-sizing: border-box;
+  outline: 0;
+}
+
+.feedback-input:focus {
+  border: 2px solid #ffffff;
+}
+
+textarea {
+  height: 150px;
+  line-height: 150%;
+  resize: vertical;
+}
+
+[type="submit"] {
+  width: 100%;
+  background: #ffffff;
+  border-radius: 5px;
+  border: 0;
+  cursor: pointer;
+  color: rgb(0, 0, 0);
+  font-size: 24px;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+  transition: all 0.3s;
+  margin-top: -4px;
+  font-weight: 700;
+}
+[type="submit"]:hover {
+  background: #787878;
+}
+
+.name {
+  margin: auto;
+  font-size: 80px;
+}
+
+.home {
+  display: flex;
+  height: 100vh;
+}
+
+.spacer {
+  width: 50%;
+}
+
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  background-color: rgb(0, 0, 0);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 50px;
+  z-index: 1;
+}
+
+.header-content {
+  font-size: 20px;
+}
+
+span {
+  margin: 10px;
+}
