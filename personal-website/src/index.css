@@ -26,6 +26,11 @@
   text-align: center;
 }
 
+.project-description {
+  padding: 10px;
+  background-color: #ffffffc9;
+}
+
 .carousel-container {
   align-items: center;
   width: 90%;

@@ -2,24 +2,24 @@ import React from "react";
 
 const ContactForm = () => {
   return (
-    <form class="form" action="https://formspree.io/f/xeqweglr" method="POST">
+    <form className="form" action="https://formspree.io/f/xeqweglr" method="POST">
       <input
         name="name"
         type="text"
-        class="feedback-input"
+        className="feedback-input"
         placeholder="Name"
         required
       />
       <input
         name="email"
         type="email"
-        class="feedback-input"
+        className="feedback-input"
         placeholder="Email"
         required
       />
       <textarea
         name="text"
-        class="feedback-input"
+        className="feedback-input"
         placeholder="Message"
         required
       ></textarea>

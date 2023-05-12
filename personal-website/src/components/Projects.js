@@ -40,17 +40,21 @@ const Projects = (props) => {
           <div className="project" key={project.title}>
             <div
               className="project-info"
-              // style={{
-              //   backgroundImage: `url("${project.image}")`,
-              //   backgroundSize: `cover`,
-              // }}
+              style={{
+                backgroundImage: `url("${project.image}")`,
+                backgroundSize: `auto 90%`,
+                backgroundPosition: `center`,
+                backgroundRepeat: `no-repeat`,
+              }}
             >
-              <image className="project-image" src={project.image}></image>
-              <h3 className="project-title">{project.title}</h3>
-              <p>{project.description}</p>
-              <a href={project.link} target="_blank" rel="noreferrer">
-                Check it out!
-              </a>
+              <div className="project-description">
+                <image className="project-image" src={project.image}></image>
+                <h3 className="project-title">{project.title}</h3>
+                <p>{project.description}</p>
+                <a href={project.link} target="_blank" rel="noreferrer">
+                  Check it out!
+                </a>
+              </div>
             </div>
           </div>
         );
